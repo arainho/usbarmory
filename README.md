@@ -1,6 +1,6 @@
 # usbarmory-setup
 
-I order my usbarmory device from [crowdsupply](https://www.crowdsupply.com/inverse-path/usb-armory), and after more than one month and paying customs duties, since I live in Europe the armory finally arrived :-)
+I order my usbarmory device from [crowdsupply](https://www.crowdsupply.com/inverse-path/usb-armory) to Europe, and after more than one month and paying customs duties the armory finally arrived :-)
 
 ### Preparing your own microSD card
 - 1. check [microSD-compatibility](https://github.com/inversepath/usbarmory/wiki/microSD-compatibility)

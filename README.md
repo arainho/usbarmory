@@ -1,19 +1,18 @@
-# usbarmory
-usbarmory-setup
+# usbarmory-setup
 
-I Order my usbarmory device from [crowdsupply](https://www.crowdsupply.com/inverse-path/usb-armory), and after more than on month and paying customs duties, since I live in Europe the armory finally arrived :-)
+I order my usbarmory device from [crowdsupply](https://www.crowdsupply.com/inverse-path/usb-armory), and after more than one month and paying customs duties, since I live in Europe the armory finally arrived :-)
 
 ### Preparing your own microSD card
 - 1. check [microSD-compatibility](https://github.com/inversepath/usbarmory/wiki/microSD-compatibility)
 - 2. choose one of the [available images](https://github.com/inversepath/usbarmory/wiki/Available-images) for usbarmory.
 - 3. [burn](https://github.com/inversepath/usbarmory-debian-base_image#Installing) the image into microSD card 
 
-I choose a samsung microSD and a pre-compiled release of debian stretch image available [here](https://github.com/inversepath/usbarmory-debian-base_image/releases).
+I choose a Samsung microSD and a pre-compiled release of Debian stretch image available [here](https://github.com/inversepath/usbarmory-debian-base_image/releases).
 
 ### Connect to usbarmory
 
 #### Option 1 - serial
-The usbarmory serial port can be connected to via a USB to TTL cable, the breakout header can be accessed as decribed in [gpio page](https://github.com/inversepath/usbarmory/wiki/GPIOs).
+The usbarmory serial port can be connected to via a USB to TTL cable, the breakout header can be accessed as described in [gpio page](https://github.com/inversepath/usbarmory/wiki/GPIOs).
 
 I solder a header in usbarmory and use pins 1,5,6 to connect 'usb to ttl' adapter with silicon CP210x chipset and specific [drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers).
 To connect in macOS use the next command:

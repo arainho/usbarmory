@@ -35,10 +35,6 @@ ssh-keygen -t rsa -b 4096 -C "usbarmory key"
 ssh-copy-id -i $HOME/.ssh/id_rsa_usbarmory usbarmory@10.0.0.1
 ```
 
-### Create Ansible Playbook to deploy 
-in progress
-
-
 ### Notes
 You need the `RNDIS/Ethernet Gadget` interface in the macOS Network Preferences.
 

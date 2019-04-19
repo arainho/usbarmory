@@ -28,7 +28,7 @@ Now you can log in with
 ssh 10.0.0.1 -l usbarmory
 ```
 
-### 2. Setup
+### 3. Additional setup
 Create a ssh key pair, and sent it to usbarmory
 ```
 ssh-keygen -t rsa -b 4096 -C "usbarmory key"

@@ -1,0 +1,8 @@
+---
+# This playbook contains common tasks in this role
+- name: "install keepass2"
+  tags:
+   - configuration
+  apt:
+    name: ['keepass2']
+  when: ansible_distribution == "Debian" or ansible_distribution == "Ubuntu"

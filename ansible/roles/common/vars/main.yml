@@ -1,0 +1,3 @@
+---
+# file: roles/common/vars/main.yml
+requirements_file: requirements.yml

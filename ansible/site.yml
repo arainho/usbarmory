@@ -1,0 +1,29 @@
+---
+# The main playbook to deploy software at usbarmory
+
+- hosts: armory.local
+  become: true
+  gather_facts: true 
+
+  pre_tasks:
+    - name: "Disable inversepath repository"
+      raw: sed -i 's/deb https:\/\/inversepath./#deb https:\/\/inversepath./g' /etc/apt/sources.list
+      register: disable_inverse
+      failed_when: disable_inverse.rc >= 2
+ 
+    - name: "Retrieve inversepath gpg key"
+      raw: apt-key adv --keyserver hkp://keys.gnupg.net:80 --recv-keys CEADE0CF01939B21 
+      register: inverse_gpg
+      failed_when: inverse_gpg.rc >= 2
+
+    - name: "Install python for Ansible"
+      raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
+      when: inverse_gpg.rc == 0
+      register: python
+      changed_when: python.stdout != ""
+
+  roles:
+    - { role: keepass2 }
+    - { role: keepassxc }
+    - { role: common }
+    - { role: etckeeper }

@@ -1,0 +1,14 @@
+---
+- name: install etckeeper
+  include_role:
+    name: sourcejedi.etckeeper
+
+- name: "initialize /etc path"
+  raw: cd /etc && etckeeper init
+  register: etckeeper_init
+  failed_when: etckeeper_init.rc >= 2
+
+- name: "perform first commit "
+  raw: cd /etc && etckeeper commit "first commit"
+  register: etckeeper_commit
+  failed_when: etckeeper_commit.rc >= 2

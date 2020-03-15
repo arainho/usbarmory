@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# adopted from
+# https://github.com/evilsocket/pwnagotchi/blob/master/scripts/macos_connection_share.sh
+
 DEFAULT_ROUTE_IFACE=$(netstat -nr | grep default | head -n1 | awk '{print $4}')
 UPSTREAM_IFACE=${1:-$DEFAULT_ROUTE_IFACE}
 USB_IFACE=''

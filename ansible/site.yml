@@ -24,6 +24,5 @@
 
   roles:
     - { role: keepass2 }
-    - { role: keepassxc }
     - { role: common }
     - { role: etckeeper }

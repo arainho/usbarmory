@@ -33,8 +33,8 @@ ssh 10.0.0.1 -l usbarmory
 
 ### 3. Prepare KeePass
 Setup is done with Ansible
-- setup ssh
-- install keepass2, etckeeper and common utilities
+  - setup ssh
+  - install keepass2, etckeeper and common utilities
 
 ### 4. INTERLOCK
 
@@ -44,13 +44,14 @@ work in progress
 WE need the `RNDIS/Ethernet Gadget` interface in the macOS Network Preferences.
 
 To share macOS internet access with the usbarmory device, you can:
+
 option 1
 ```
 sudo ./scripts/connection_share.sh
 ```
 
 option 2
-- set usbamory ip to `192.168.2.X/24` and gateway `192.168.2.1`
-- in macOS set ip address of `RNDIS/Ethernet Gadget` interface to `192.168.2.1`
-- finally set `Enable Internet Sharing` to ON in System Preferences
+  - set usbamory ip to `192.168.2.X/24` and gateway `192.168.2.1`
+  - in macOS set ip address of `RNDIS/Ethernet Gadget` interface to `192.168.2.1`
+  - finally set `Enable Internet Sharing` to ON in System Preferences
 

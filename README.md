@@ -1,6 +1,6 @@
 # usbarmory-setup
 
-I order my usbarmory device from [crowdsupply](https://www.crowdsupply.com/inverse-path/usb-armory) to Europe, and after more than one month and paying customs duties, the Armory finally arrived :-)
+I order my USB armory device from [crowdsupply](https://www.crowdsupply.com/inverse-path/usb-armory) to Europe, and after more than one month and paying customs duties, the Armory finally arrived :-)
 
 My purpose is to use the Armory a my password manager with [KeePass](https://keepass.info/),
 and also [INTERLOCK](https://github.com/f-secure-foundry/interlock) (file encryption front end).
@@ -10,7 +10,7 @@ and also [INTERLOCK](https://github.com/f-secure-foundry/interlock) (file encryp
 - 2. choose one of the [available images](https://github.com/inversepath/usbarmory/wiki/Available-images) for usbarmory.
 - 3. [burn](https://github.com/inversepath/usbarmory-debian-base_image#Installing) the image into microSD card 
 
-I choose a Samsung microSD and a pre-compiled release of Debian stretch image available [here](https://github.com/inversepath/usbarmory-debian-base_image/releases).
+I choose a Samsung microSD and installed Void Linux as described in their [wiki](https://voidlinux.miraheze.org/wiki/USB_Armory).
 
 ### 2. Connect to usbarmory
 
@@ -37,8 +37,7 @@ Setup is done with Ansible
   - install keepass2, etckeeper and common utilities
 
 ### 4. INTERLOCK
-
-work in progress
+Setup interlock on USB armory (armv7) for 'Void Linux' as described in my gist [void_interlock.sh](https://gist.github.com/arainho/95a4dc587b57c8827c78b4ba1f3a5f2b).
 
 ### Notes
 WE need the `RNDIS/Ethernet Gadget` interface in the macOS Network Preferences.

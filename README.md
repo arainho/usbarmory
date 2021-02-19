@@ -7,8 +7,8 @@ and also [INTERLOCK](https://github.com/f-secure-foundry/interlock) (file encryp
 
 ### 1. Preparing your own microSD card
 - 1. check [microSD-compatibility](https://github.com/inversepath/usbarmory/wiki/microSD-compatibility)
-- 2. choose one of the [available images](https://github.com/inversepath/usbarmory/wiki/Available-images) for usbarmory.
-- 3. [burn](https://github.com/inversepath/usbarmory-debian-base_image#Installing) the image into microSD card 
+- 2. choose one of the [available images](https://github.com/inversepath/usbarmory/wiki/Available-images) for usbarmory
+- 3. [burn](https://voidlinux.miraheze.org/wiki/USB_Armory#Installation) Void Linux image into microSD card 
 
 I choose a Samsung microSD and installed Void Linux as described in their [wiki](https://voidlinux.miraheze.org/wiki/USB_Armory).
 
@@ -24,7 +24,7 @@ screen /dev/tty.SLAB_USBtoUART 115200
 ```
 
 #### Option 2 - ssh connection
-In this image `usbarmory-debian-base_image` usbarmory cames with predefined ipv4 address `10.0.0.1`, so set you ip address to `10.0.0.2` and connect to your usbarmory. 
+The Void Linux image cames with predefined ipv4 address `10.0.0.1`, so set you ip address to `10.0.0.2` and connect to your usbarmory. 
 
 Now you can log in with
 ```
@@ -37,7 +37,7 @@ Setup is done with Ansible
   - install keepass2, etckeeper and common utilities
 
 ### 4. INTERLOCK
-Setup interlock on USB armory (armv7) for 'Void Linux' as described in my gist [void_interlock.sh](https://gist.github.com/arainho/95a4dc587b57c8827c78b4ba1f3a5f2b).
+Setup interlock on USB armory (armv7) for Void Linux as described in my gist [void_interlock.sh](https://gist.github.com/arainho/95a4dc587b57c8827c78b4ba1f3a5f2b).
 
 ### Notes
 WE need the `RNDIS/Ethernet Gadget` interface in the macOS Network Preferences.

@@ -37,7 +37,7 @@ Setup is done with Ansible
   - install keepass2, etckeeper and standard utilities
 
 ### 4. INTERLOCK
-Setup interlock on USB armory (armv7) for Void Linux as described in my gist [void_interlock.sh](https://gist.github.com/arainho/95a4dc587b57c8827c78b4ba1f3a5f2b).
+Setup interlock on USB armory (armv7) for Void Linux as described in my blog entry [USB Armory - Interlock setup](http://blog.arainho.me/2020/02/12/usbarmory-interlock.html).
 
 ### Notes
 WE need the `RNDIS/Ethernet Gadget` interface in the macOS Network Preferences.

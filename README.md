@@ -2,7 +2,7 @@
 
 I order my USB armory device from [crowdsupply](https://www.crowdsupply.com/inverse-path/usb-armory) to Europe, and after more than one month and paying customs duties, the Armory finally arrived :-)
 
-My purpose is to use the Armory as a password manager with [KeePass](https://keepass.info/),
+My purpose is to use the Armory as a password manager with [KeePassXC](https://keepassxc.org/),
 and also [INTERLOCK](https://github.com/f-secure-foundry/interlock) (file encryption front end).
 
 ### 1. Preparing your own microSD card

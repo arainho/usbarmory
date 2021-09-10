@@ -40,7 +40,7 @@ Setup is done with Ansible
 Setup interlock on USB armory (armv7) for Void Linux as described in my blog entry [USB Armory - Interlock setup](http://blog.arainho.me/2020/02/12/usbarmory-interlock.html).
 
 ### Notes
-WE need the `RNDIS/Ethernet Gadget` interface in the macOS Network Preferences.
+We need the `RNDIS/Ethernet Gadget` interface in the macOS Network Preferences.
 
 To share macOS internet access with the USB armory device, you can:
 

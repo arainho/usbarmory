@@ -10,3 +10,4 @@ sudo  sysctl -p
 sudo iptables -I INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 sudo iptables -I FORWARD  -m state --state RELATED,ESTABLISHED -j ACCEPT
 sudo iptables -t nat -I POSTROUTING -o usb0 -j MASQUERADE
+sudo iptables -nvL

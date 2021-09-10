@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-
-Linux - Internet connection share
+# Linux - Internet connection share
 
 # Activate IP forwarding
 sysctl -w net.ipv4.ip_forward=1

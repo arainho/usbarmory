@@ -4,7 +4,6 @@ Linux - Internet connection share
 
 # Activate IP forwarding
 sysctl -w net.ipv4.ip_forward=1
-sysctl -p
 
 # NAT configuration
 iptables -I INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT

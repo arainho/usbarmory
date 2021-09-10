@@ -9,4 +9,4 @@ sysctl -p
 # NAT configuration
 iptables -I INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 iptables -I FORWARD  -m state --state RELATED,ESTABLISHED -j ACCEPT
-iptables -t nat -I POSTROUTING -o ppp0 -j MASQUERADE
+iptables -t nat -I POSTROUTING -o usb0 -j MASQUERADE

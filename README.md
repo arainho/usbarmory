@@ -34,7 +34,7 @@ ssh 10.0.0.1 -l usbarmory
 ### 3. Prepare KeePass
 Setup is done with Ansible
   - setup ssh
-  - install keepass2, etckeeper and standard utilities
+  - install keepassxc, etckeeper and standard utilities
 
 ### 4. INTERLOCK
 Setup interlock on USB armory (armv7) for Void Linux as described in my blog entry [USB Armory - Interlock setup](http://blog.arainho.me/2020/02/12/usbarmory-interlock.html).
@@ -53,4 +53,10 @@ option 2
   - set USB armory IP to `192.168.2.X/24` and gateway `192.168.2.1`
   - in macOS set the IP address of `RNDIS/Ethernet Gadget` interface to `192.168.2.1`
   - finally, set `Enable Internet Sharing` to ON in System Preferences
+
+To share Linux internet connection with the USB armory device, just run:
+```
+sudo ./scripts/linux_connection_share.sh
+```
+
 

@@ -1,16 +1,15 @@
 # usbarmory-setup
 
-I order my USB armory device from [crowdsupply](https://www.crowdsupply.com/inverse-path/usb-armory) to Europe, and after more than one month and paying customs duties, the Armory finally arrived :-)
+I order my [USB Armory I](https://inversepath.com/usbarmory_mark-one.html) device from [crowdsupply](https://www.crowdsupply.com/inverse-path/usb-armory) to Europe, and after more than one month and paying customs duties, the Armory finally arrived :-)
 
 My purpose is to use the Armory as a password manager with [KeePassXC](https://keepassxc.org/),
 and also [INTERLOCK](https://github.com/f-secure-foundry/interlock) (file encryption front end).
 
 ### 1. Preparing your own microSD card
 - 1. check [microSD-compatibility](https://github.com/inversepath/usbarmory/wiki/microSD-compatibility)
-- 2. [burn](https://voidlinux.miraheze.org/wiki/USB_Armory#Installation) Void Linux image into microSD card 
+- 2. [burn](https://archlinuxarm.org/platforms/armv7/freescale/usb-armory) Arch Linux image into microSD card 
 
-I chose a Samsung microSD and installed Void Linux as described in their [wiki](https://voidlinux.miraheze.org/wiki/USB_Armory).
-I choose Void Linux, but there are other [available images](https://github.com/inversepath/usbarmory/wiki/Available-images) for USB armory.
+I choose a Samsung microSD for Arch Linux, but there are other [available images](https://github.com/inversepath/usbarmory/wiki/Available-images) for USB Armory I.
 
 ### 2. Connect to USB armory
 
@@ -24,7 +23,7 @@ screen /dev/tty.SLAB_USBtoUART 115200
 ```
 
 #### Option 2 - ssh connection
-The Void Linux image comes with predefined ipv4 address `10.0.0.1`, so set your IP address to `10.0.0.2` and connect to your USB armory. 
+The Arch Linux image comes with predefined ipv4 address `10.0.0.1`, so set your IP address to `10.0.0.2` and connect to your USB armory. 
 
 Now you can log in with
 ```
@@ -37,7 +36,7 @@ Setup is done with Ansible
   - install keepassxc, etckeeper and standard utilities
 
 ### 4. INTERLOCK
-Setup interlock on USB armory (armv7) for Void Linux as described in my blog entry [USB Armory - Interlock setup](http://blog.arainho.me/2020/02/12/usbarmory-interlock.html).
+Setup interlock on USB armory (armv7) for Arch Linux as described in my blog entry [USB Armory I - Interlock setup](http://blog.arainho.me/2020/02/12/usbarmory-interlock.html).
 
 ### Notes
 We need the `RNDIS/Ethernet Gadget` interface in the macOS Network Preferences.
